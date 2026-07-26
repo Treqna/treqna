@@ -8,7 +8,7 @@ class DriverTemplateOptions:
     package_name: str
     version: str = "0.1.0"
     author: str = "Treqna Contributor"
-    email: str = "developer@treqna.org"
+    email: str = "developer@treqna.coom"
 
 
 def render_pyproject_toml(opts: DriverTemplateOptions) -> str:
