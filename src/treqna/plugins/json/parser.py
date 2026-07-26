@@ -110,3 +110,4 @@ class JSONParserPlugin(ParserPluginInterface):
         parsed = json.loads(text_content)
         root_node = json_obj_to_udm_node(parsed)
         return UDMDocument(root=root_node, schema_identifier="json_stream")
+

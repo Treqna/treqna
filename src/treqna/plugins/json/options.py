@@ -8,3 +8,4 @@ class JSONOptions:
     sort_keys: bool = False
     encoding: str = "utf-8"
     allow_nan: bool = True
+

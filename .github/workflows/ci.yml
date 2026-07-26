@@ -42,3 +42,4 @@ jobs:
       - name: Test editable installation
         run: |
           python -c "import treqna; print(treqna.__version__)"
+

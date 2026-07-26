@@ -15,7 +15,7 @@ Only the latest release family receives security updates and patches:
 
 Please do not report security vulnerabilities through public GitHub issues.
 
-Instead, please report security vulnerabilities privately via email to `security@treqna.org` or via GitHub Private Vulnerability Reporting.
+Instead, please report security vulnerabilities privately via email to `security@treqna.com` or via GitHub Private Vulnerability Reporting.
 
 Include the following details in your report:
 
@@ -24,3 +24,4 @@ Include the following details in your report:
 - Potential impact of the vulnerability.
 
 We will respond within 48 hours and provide a remediation timeline.
+

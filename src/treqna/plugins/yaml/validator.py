@@ -22,3 +22,4 @@ class YAMLValidator(FormatValidatorInterface):
         except yaml.YAMLError as err:
             msg = f"YAML syntax error: {err}"
             return False, (msg,)
+

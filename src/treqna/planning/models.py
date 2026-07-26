@@ -77,3 +77,4 @@ class TransformationPlan:
     estimated_cost: PlanCost = field(default_factory=PlanCost)
     estimated_quality: PlanQuality = field(default_factory=PlanQuality)
     statistics: PlanStatistics = field(default_factory=PlanStatistics)
+

@@ -216,3 +216,4 @@ class ExcelWriterPlugin(WriterPluginInterface):
         ctx = PipelineContext(session_id="stream", execution_context=exec_ctx)
         xlsx_bytes = self.write_from_udm(document, ctx)
         target_stream.write(xlsx_bytes.decode("latin1"))
+

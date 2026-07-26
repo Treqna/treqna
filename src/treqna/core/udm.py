@@ -92,3 +92,4 @@ class UDMDocument:
     root: UDMNode
     metadata: Mapping[str, Any] = field(default_factory=dict)
     schema_identifier: str | None = None
+

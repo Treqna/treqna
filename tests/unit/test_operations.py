@@ -84,3 +84,4 @@ def test_operation_registry_lookups() -> None:
 
     with pytest.raises(OperationNotFoundError):
         registry.get_by_name("non_existent")
+

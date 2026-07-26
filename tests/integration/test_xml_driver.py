@@ -80,3 +80,4 @@ def test_cross_format_xml_to_xml(temp_xml_file: Path) -> None:
     res = treqna.transform(temp_xml_file).to("xml").execute()
     assert res.success is True
     assert "<name>Alice</name>" in res.output
+

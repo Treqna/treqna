@@ -25,3 +25,4 @@ class ExcelDetector(FormatDetectorInterface):
         if self.can_detect(source_data):
             return "excel"
         return "unknown"
+

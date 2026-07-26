@@ -128,3 +128,4 @@ class YAMLParserPlugin(ParserPluginInterface):
                 root=UDMPrimitive(value=text_content),
                 schema_identifier="yaml_stream_raw",
             )
+

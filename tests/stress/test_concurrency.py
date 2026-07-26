@@ -29,3 +29,4 @@ def test_concurrency_1000_workers() -> None:
 
     assert len(results) == num_workers
     assert all(results)
+

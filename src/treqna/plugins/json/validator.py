@@ -22,3 +22,4 @@ class JSONValidator(FormatValidatorInterface):
         except json.JSONDecodeError as err:
             msg = f"JSON syntax error at line {err.lineno}, col {err.colno}: {err.msg}"
             return False, (msg,)
+

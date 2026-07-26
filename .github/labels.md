@@ -11,3 +11,4 @@
 | `cli` | `#5319e7` | Changes to command line interface |
 | `dependencies` | `#0366d6` | Pull requests updating dependencies |
 | `stale` | `#ffffff` | Issue or PR inactive for > 60 days |
+

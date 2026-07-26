@@ -52,3 +52,4 @@ class ExcelInspector(FormatInspectorInterface):
                 "sheet_names": (),
                 "sheet_count": 0,
             }
+

@@ -81,3 +81,4 @@ class TreqnaProfiler:
             peak_memory_kb=round(peak_mem / 1024.0, 2),
             memory_leak_bytes=current_mem - start_mem,
         )
+

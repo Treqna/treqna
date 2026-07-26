@@ -30,3 +30,4 @@ This document outlines the strategic engineering roadmap for Treqna.
 
 ### Sprint 2.0: High-Performance Engine (Planned)
 - C-extension acceleration, WebAssembly target, and distributed pipeline execution.
+

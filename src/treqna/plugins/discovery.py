@@ -16,3 +16,4 @@ def discover_and_register_plugins(
     register_yaml_plugin(plugin_registry, format_registry)
     register_xml_plugin(plugin_registry, format_registry)
     register_excel_plugin(plugin_registry, format_registry)
+

@@ -21,3 +21,4 @@ __all__ = [
     "ExcelWriterPlugin",
     "register_excel_plugin",
 ]
+

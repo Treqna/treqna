@@ -36,3 +36,4 @@ class FormatInspectorInterface(ABC):
     @abstractmethod
     def inspect_schema(self, source_data: bytes | str) -> Mapping[str, Any]:
         ...
+

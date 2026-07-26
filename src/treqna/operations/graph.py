@@ -27,3 +27,4 @@ class OperationGraph:
 
     def edge_count(self) -> int:
         return len(self.edges)
+

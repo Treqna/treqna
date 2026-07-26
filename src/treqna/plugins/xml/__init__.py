@@ -21,3 +21,4 @@ __all__ = [
     "XML_FORMAT_DESCRIPTOR",
     "register_xml_plugin",
 ]
+

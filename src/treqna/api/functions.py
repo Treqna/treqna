@@ -206,3 +206,4 @@ def split(source: Any, target_count: int = 2) -> SplitResult:
         split_parts_count=target_count,
         metadata={"source_type": coerced.source_type},
     )
+

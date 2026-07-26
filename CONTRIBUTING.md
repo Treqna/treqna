@@ -39,3 +39,4 @@ python -m pytest
 3. Add unit tests in `tests/unit/` covering new features or bug fixes.
 4. Ensure test coverage remains above 95%.
 5. Follow the template provided in `.github/PULL_REQUEST_TEMPLATE.md`.
+

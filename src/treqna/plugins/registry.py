@@ -57,3 +57,4 @@ class PluginRegistry:
         self._parsers.clear()
         self._writers.clear()
         self._transformers.clear()
+

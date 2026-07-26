@@ -79,3 +79,4 @@ def test_cli_create_driver(tmp_path: Path) -> None:
     assert exit_code == 0
     assert (out_dir / "pyproject.toml").exists()
     assert (out_dir / "src" / "treqna_clifmt" / "parser.py").exists()
+

@@ -19,3 +19,4 @@ By decoupling reading and writing:
 1. Adding a new format requires only **1 Parser** (`Format -> UDM`) and **1 Writer** (`UDM -> Format`).
 2. Overall system complexity remains strictly $O(N)$.
 3. Transformations operate directly on the UDM data tree, working seamlessly across all present and future formats.
+

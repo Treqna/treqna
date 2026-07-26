@@ -31,3 +31,4 @@ flowchart TD
 2. **Immutable Objects**: Result objects, statistics, descriptors, and options are frozen dataclasses.
 3. **Explicit Capability Registration**: Format descriptors declare exact MIME types, extension aliases, and features.
 4. **Deterministic Pipeline**: Every transformation follows the identical 8-stage lifecycle.
+

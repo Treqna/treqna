@@ -23,3 +23,4 @@ def test_repeated_transform_100_iterations() -> None:
         assert res3.success is True
         res4 = treqna.transform(res3.output).to("csv").execute()
         assert res4.success is True
+

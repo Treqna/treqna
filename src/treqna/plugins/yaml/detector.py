@@ -29,3 +29,4 @@ class YAMLDetector(FormatDetectorInterface):
         if self.can_detect(source_data):
             return "yaml"
         return "unknown"
+

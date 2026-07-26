@@ -46,3 +46,4 @@ class KnowledgeGraph:
     )
     node_weights: Mapping[str, float] = field(default_factory=dict)
     edge_weights: Mapping[str, float] = field(default_factory=dict)
+

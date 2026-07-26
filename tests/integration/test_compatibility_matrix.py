@@ -74,3 +74,4 @@ def test_compatibility_pair_transformation_failure_branch(monkeypatch: pytest.Mo
     res = runner.run_pair_transformation("csv", "json", "data")
     assert res.success is False
     assert res.errors == ("Simulated transformation failure",)
+

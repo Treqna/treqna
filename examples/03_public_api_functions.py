@@ -10,3 +10,4 @@ print(f"Schema Info: {inspection.schema_info}")
 
 validation = treqna.validate(json_data)
 print(f"Validation: {'VALID' if validation.is_valid else 'INVALID'}")
+

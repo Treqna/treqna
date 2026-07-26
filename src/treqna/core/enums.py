@@ -52,3 +52,4 @@ class UDMValueKindEnum(Enum):
     HIERARCHICAL = "hierarchical"
     COLLECTION = "collection"
     OBJECT = "object"
+

@@ -65,3 +65,4 @@ def test_cli_transform_command(temp_csv_file: Path, tmp_path: Path) -> None:
     assert out_file.exists()
     content = out_file.read_text(encoding="utf-8")
     assert "Alice" in content
+

@@ -94,3 +94,4 @@ class OperationDescriptor:
     requirements: OperationRequirement = field(
         default_factory=OperationRequirement
     )
+

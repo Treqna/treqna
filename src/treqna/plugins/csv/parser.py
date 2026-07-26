@@ -151,3 +151,4 @@ class CSVParserPlugin(ParserPluginInterface):
             rows=tuple(rows_list),
         )
         return UDMDocument(root=tabular_node, schema_identifier="csv_tabular_stream")
+

@@ -12,3 +12,4 @@ class XMLOptions:
     preserve_comments: bool = True
     standalone: bool | None = None
     sort_attributes: bool = False
+

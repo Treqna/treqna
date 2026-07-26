@@ -21,3 +21,4 @@ __all__ = [
     "YAML_FORMAT_DESCRIPTOR",
     "register_yaml_plugin",
 ]
+

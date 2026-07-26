@@ -8,7 +8,7 @@ class DriverTemplateOptions:
     package_name: str
     version: str = "0.1.0"
     author: str = "Treqna Contributor"
-    email: str = "developer@treqna.org"
+    email: str = "developer@treqna.com"
 
 
 def render_pyproject_toml(opts: DriverTemplateOptions) -> str:
@@ -559,3 +559,4 @@ def render_license() -> str:
 Version 2.0, January 2004
 http://www.apache.org/licenses/
 """
+

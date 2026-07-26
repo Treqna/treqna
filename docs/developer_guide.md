@@ -33,3 +33,4 @@ All new plugin interfaces must be defined under `treqna.plugins.interface` and i
 - `mypy src`
 - `ruff check src`
 - `ruff format src`
+

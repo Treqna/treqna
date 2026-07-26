@@ -69,3 +69,4 @@ class ConstraintSolver(ABC):
         constraint: PlanConstraint,
     ) -> bool:
         ...
+

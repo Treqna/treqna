@@ -23,3 +23,4 @@ class XMLDetector(FormatDetectorInterface):
         if self.can_detect(source_data):
             return "xml"
         return "unknown"
+

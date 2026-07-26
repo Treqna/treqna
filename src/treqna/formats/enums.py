@@ -86,3 +86,4 @@ class PluginPriority(IntEnum):
     NORMAL = 50
     HIGH = 80
     CRITICAL = 100
+

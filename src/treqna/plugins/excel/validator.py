@@ -34,3 +34,4 @@ class ExcelValidator(FormatValidatorInterface):
                 return True, ()
         except zipfile.BadZipFile as err:
             return False, (f"Corrupted Excel ZIP package: {err}",)
+

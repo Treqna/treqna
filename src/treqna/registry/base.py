@@ -33,3 +33,4 @@ class ComponentRegistry(Generic[T]):
 
     def __len__(self) -> int:
         return len(self._components)
+

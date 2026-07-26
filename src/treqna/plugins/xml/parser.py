@@ -182,3 +182,4 @@ class XMLParserPlugin(ParserPluginInterface):
                 root=UDMPrimitive(value=text_content),
                 schema_identifier="xml_stream_raw",
             )
+

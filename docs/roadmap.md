@@ -22,3 +22,4 @@
 
 ### Sprint 1.3: Binary & Tabular Analytics
 - Official Apache Parquet and Arrow adapter plugins.
+

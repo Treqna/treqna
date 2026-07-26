@@ -234,3 +234,4 @@ def test_json_manifest_metadata() -> None:
     manifest.parser.shutdown()
     manifest.writer.initialize(create_mock_context())
     manifest.writer.shutdown()
+

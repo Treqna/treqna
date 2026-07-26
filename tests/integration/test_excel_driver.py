@@ -97,3 +97,4 @@ def test_cross_format_excel_to_xml(temp_excel_file: Path) -> None:
 def test_cross_format_excel_to_excel(temp_excel_file: Path) -> None:
     res = treqna.transform(temp_excel_file).to("excel").execute()
     assert res.success is True
+

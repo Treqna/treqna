@@ -17,3 +17,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Official CSV Adapter Plugin**: Production-grade `CSVParserPlugin`, `CSVWriterPlugin`, `CSVDetector`, `CSVInspector`, `CSVValidator`, `CSVOptions`, `CSVPluginManifest`, and `register_csv_plugin`.
 - **Sprint 0.9 Vertical Slice & CLI**: Connected end-to-end transformation execution across public API and CLI commands (`detect`, `inspect`, `validate`, `transform`).
 - **Release Management & Governance**: Configured GitHub Actions CI/CD matrix, CodeQL security scanning, Dependabot, issue templates, PR template, CODEOWNERS, governance model, security policy, roadmap, architecture, style guide, and maintainers roster.
+

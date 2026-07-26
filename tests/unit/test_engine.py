@@ -54,3 +54,4 @@ def test_transformation_engine_execution() -> None:
     assert result.output_format == "xml"
     assert len(result.stage_results) == 8
     assert result.statistics.duration_seconds >= 0.0
+

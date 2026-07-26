@@ -120,3 +120,4 @@ class XMLWriterPlugin(WriterPluginInterface):
         root_elem = build_xml_element(opts.root_tag, json_obj)
         output_str = format_xml_string(root_elem, opts)
         target_stream.write(output_str)
+

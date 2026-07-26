@@ -57,3 +57,4 @@ class CSVInspector(FormatInspectorInterface):
             "delimiter": delimiter,
             "sample_row_count": row_count,
         }
+

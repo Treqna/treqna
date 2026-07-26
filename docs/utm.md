@@ -38,3 +38,4 @@ classDiagram
 - `UDMTabular`: Tabular dataset storing column names and row tuples.
 - `UDMPrimitive`: Leaf node holding scalar primitives (strings, numbers, booleans).
 - `UDMCollection`: Ordered collection of UDM nodes.
+

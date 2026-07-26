@@ -65,3 +65,4 @@ def test_cross_format_yaml_to_yaml(temp_yaml_file: Path) -> None:
     res = treqna.transform(temp_yaml_file).to("yaml").execute()
     assert res.success is True
     assert "name: Alice" in res.output
+

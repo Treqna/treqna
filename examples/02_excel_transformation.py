@@ -8,3 +8,4 @@ print(f"Generated Excel binary payload size: {len(excel_result.output)} bytes")
 json_result = treqna.transform(excel_result.output).to("json").execute()
 print("Excel -> JSON:")
 print(json_result.output)
+

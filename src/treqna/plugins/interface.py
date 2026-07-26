@@ -28,3 +28,4 @@ class PluginInterface(ABC):
     @abstractmethod
     def shutdown(self) -> None:
         ...
+

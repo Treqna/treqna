@@ -21,3 +21,4 @@ def test_long_running_stress_100000_transformations() -> None:
 
     memory_growth = current_mem - start_mem
     assert memory_growth < 5 * 1024 * 1024
+

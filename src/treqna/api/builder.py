@@ -105,3 +105,4 @@ class TransformationBuilder:
 def create_builder(source: Any) -> TransformationBuilder:
     coerced = coerce_source(source)
     return TransformationBuilder(source=coerced)
+

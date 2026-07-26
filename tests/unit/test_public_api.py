@@ -102,3 +102,4 @@ def test_public_operation_results() -> None:
 
     spl = treqna.split("file.json", target_count=3)
     assert isinstance(spl, SplitResult)
+

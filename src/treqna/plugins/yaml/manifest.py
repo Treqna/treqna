@@ -73,3 +73,4 @@ def register_yaml_plugin(
     plugin_registry.register_writer(manifest.writer)
     if format_registry is not None:
         format_registry.register_descriptor(manifest.descriptor)
+

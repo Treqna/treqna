@@ -56,3 +56,4 @@ def test_yaml_writer_performance_benchmark() -> None:
 
     assert len(output) > 10000
     assert duration < 5.0
+

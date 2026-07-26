@@ -254,3 +254,4 @@ class PipelineExecutor:
             errors=tuple(errors_list),
             statistics=stats,
         )
+

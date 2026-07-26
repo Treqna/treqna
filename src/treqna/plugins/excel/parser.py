@@ -213,3 +213,4 @@ class ExcelParserPlugin(ParserPluginInterface):
         exec_ctx = ExecutionContext(current_format="excel", target_format="udm")
         ctx = PipelineContext(session_id="excel_stream", execution_context=exec_ctx)
         return self.parse_to_udm(text, ctx)
+

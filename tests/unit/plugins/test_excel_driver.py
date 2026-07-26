@@ -315,3 +315,4 @@ def test_excel_random_fuzzing() -> None:
         chars = "".join(random.choices(string.printable, k=50))
         doc = parser.parse_to_udm(chars.encode("utf-8"), context)
         assert isinstance(doc.root, (UDMTabular, UDMCollection, UDMPrimitive))
+

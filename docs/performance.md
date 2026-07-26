@@ -15,3 +15,4 @@ Treqna is designed for high throughput and low memory footprint.
 
 - **Standard Execution**: In-memory parsing loads dataset into UDM tree.
 - **Streaming Generator Execution**: `stream_parse_to_udm()` and `stream_write_from_udm()` process items line-by-line, guaranteeing $O(1)$ memory overhead regardless of input stream size.
+

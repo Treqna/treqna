@@ -28,3 +28,4 @@ body:
       description: How should the documentation be updated?
     validations:
       required: false
+

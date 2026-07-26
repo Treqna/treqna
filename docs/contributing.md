@@ -38,3 +38,4 @@ python -m pytest
 2. Include complete type annotations for all new code.
 3. Add unit tests covering new features or bug fixes.
 4. Ensure test coverage remains above 95%.
+

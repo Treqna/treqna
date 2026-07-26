@@ -26,3 +26,4 @@ class Initializable(Protocol):
 
     def shutdown(self) -> None:
         ...
+

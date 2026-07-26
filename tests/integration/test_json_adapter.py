@@ -51,3 +51,4 @@ def test_public_api_transform_csv_to_json(tmp_path: Path) -> None:
     assert res.success is True
     assert isinstance(res.output, str)
     assert '"item": "Apple"' in res.output or '"item":"Apple"' in res.output
+

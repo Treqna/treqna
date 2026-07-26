@@ -57,3 +57,4 @@ def test_excel_parser_performance_benchmark() -> None:
     assert isinstance(parsed_doc.root, UDMTabular)
     assert len(parsed_doc.root.rows) == 1000
     assert duration < 5.0
+

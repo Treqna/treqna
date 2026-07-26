@@ -28,3 +28,4 @@ jobs:
       - name: Run benchmark tests
         run: |
           python -m pytest tests/benchmarks/test_csv_benchmark.py
+

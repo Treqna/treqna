@@ -72,3 +72,4 @@ class PipelineContext:
     execution_context: ExecutionContext
     state: PipelineState = field(default_factory=PipelineState)
     events: PipelineEvents = field(default_factory=PipelineEvents)
+

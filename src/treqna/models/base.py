@@ -28,3 +28,4 @@ class ExecutionContext:
     environment: str = "default"
     metadata: EntityMetadata | None = None
     parameters: dict[str, Any] = field(default_factory=dict)
+

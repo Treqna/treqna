@@ -83,3 +83,4 @@ def test_plan_cost_and_quality_defaults() -> None:
 
     assert cost.time_complexity_score == 1.0
     assert quality.metadata_preservation == 1.0
+

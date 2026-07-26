@@ -87,3 +87,4 @@ class JSONWriterPlugin(WriterPluginInterface):
             sort_keys=opts.sort_keys,
             allow_nan=opts.allow_nan,
         )
+

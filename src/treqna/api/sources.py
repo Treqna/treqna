@@ -107,3 +107,4 @@ def extract_raw_payload(source: DataSource) -> str | bytes:
                 return val
         return str(source.stream)
     return str(source)
+

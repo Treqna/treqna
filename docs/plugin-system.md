@@ -52,3 +52,4 @@ class MyCustomParser(ParserPluginInterface):
     def parse_to_udm(self, source_data, context) -> UDMDocument:
         return UDMDocument(root=UDMTabular(columns=("col",), rows=(("val",),)))
 ```
+

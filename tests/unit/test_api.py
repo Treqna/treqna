@@ -31,3 +31,4 @@ def test_api_client_transform_invocation() -> None:
     assert result.status == ResultStatusEnum.SUCCESS
     assert result.output_format == "xml"
     assert len(result.stage_results) == 8
+

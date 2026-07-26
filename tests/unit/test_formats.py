@@ -94,3 +94,4 @@ def test_planner_find_best_descriptor() -> None:
     best = registry.find_best_descriptor(FormatCapability.READ)
     assert best is not None
     assert best.name == "JSON"
+

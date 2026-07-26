@@ -20,3 +20,4 @@ graph TD
 - `TransformationPlan`: Immutable plan containing plan nodes, edges, cost metrics, quality scores, and stable `PipelineFingerprint`.
 - `CostEstimator` & `QualityEstimator`: Abstract estimators rating execution cost and metadata preservation scores.
 - `ConstraintSolver`: Solves format compatibility constraints.
+

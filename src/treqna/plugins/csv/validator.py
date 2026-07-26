@@ -41,3 +41,4 @@ class CSVValidator(FormatValidatorInterface):
             errors.append(f"CSV format error at line {line_num}: {err}")
 
         return len(errors) == 0, tuple(errors)
+

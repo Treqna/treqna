@@ -265,3 +265,4 @@ def test_yaml_random_fuzzing() -> None:
         chars = "".join(random.choices(string.printable, k=50))
         doc = parser.parse_to_udm(chars, context)
         assert isinstance(doc.root, (UDMTabular, UDMCollection, UDMPrimitive))
+

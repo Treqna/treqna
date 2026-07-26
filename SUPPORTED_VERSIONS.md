@@ -14,3 +14,4 @@ This document outlines the Python runtime versions supported by Treqna.
 ## Lifecycle Schedule
 
 Treqna aligns its Python version support window with the official Python release lifecycle defined in PEP 602. When a Python version reaches End of Life (EOL) upstream, Treqna will deprecate support in the subsequent minor release.
+

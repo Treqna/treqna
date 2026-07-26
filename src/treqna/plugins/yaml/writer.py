@@ -81,3 +81,4 @@ class YAMLWriterPlugin(WriterPluginInterface):
             allow_unicode=opts.allow_unicode,
             sort_keys=opts.sort_keys,
         )
+

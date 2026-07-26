@@ -13,3 +13,4 @@ class ExcelOptions:
     freeze_header: bool = True
     preserve_empty_rows: bool = False
     encoding: str = "utf-8"
+

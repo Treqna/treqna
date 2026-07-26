@@ -36,3 +36,4 @@ class TransformationResult:
     warnings: tuple[str, ...] = field(default_factory=tuple)
     errors: tuple[str, ...] = field(default_factory=tuple)
     statistics: ExecutionStatistics = field(default_factory=ExecutionStatistics)
+

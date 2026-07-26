@@ -102,3 +102,4 @@ Splits data payload into target partitions.
 split_res = treqna.split("large_data.csv", target_count=4)
 print(split_res.split_parts_count)  # 4
 ```
+

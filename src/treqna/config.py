@@ -23,3 +23,4 @@ class AppConfig:
     engine: EngineConfig = field(default_factory=EngineConfig)
     plugins: PluginConfig = field(default_factory=PluginConfig)
     environment: str = "production"
+

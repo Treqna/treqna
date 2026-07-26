@@ -26,3 +26,4 @@ class CSVDetector(FormatDetectorInterface):
             return "csv"
         except (csv.Error, UnicodeDecodeError, ValueError):
             return "unknown"
+

@@ -9,3 +9,4 @@ def test_version_defined() -> None:
 
 def test_package_exports_version() -> None:
     assert treqna.__version__ == __version__
+

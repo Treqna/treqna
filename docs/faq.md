@@ -11,3 +11,4 @@ Treqna supports Python 3.11, 3.12, and 3.13.
 
 ### Can I write custom plugins for my proprietary file formats?
 Yes. Implement `ParserPluginInterface` or `WriterPluginInterface` and register your plugin with `PluginRegistry`.
+

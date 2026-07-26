@@ -55,3 +55,4 @@ def test_csv_writer_performance_benchmark() -> None:
 
     assert len(output) > 100000
     assert duration < 2.0
+

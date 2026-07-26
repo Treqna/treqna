@@ -16,3 +16,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Official CSV Adapter Plugin**: Production-grade `CSVParserPlugin`, `CSVWriterPlugin`, `CSVDetector`, `CSVInspector`, `CSVValidator`, `CSVOptions`, `CSVPluginManifest`, and `register_csv_plugin`.
 - **Vertical Slice & CLI**: Connected end-to-end transformation execution across public API and CLI commands (`detect`, `inspect`, `validate`, `transform`).
 - **MkDocs Material Documentation**: Comprehensive documentation suite with search, light/dark mode, code copy buttons, and Mermaid architecture diagrams.
+

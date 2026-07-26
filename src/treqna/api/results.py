@@ -71,3 +71,4 @@ class MergeResult(BaseApiResult):
 @dataclass(frozen=True, kw_only=True)
 class SplitResult(BaseApiResult):
     split_parts_count: int = 0
+

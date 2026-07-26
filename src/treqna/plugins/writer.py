@@ -24,3 +24,4 @@ class FormatValidatorInterface(ABC):
     @abstractmethod
     def validate_output(self, output_data: bytes | str) -> bool:
         ...
+

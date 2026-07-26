@@ -22,3 +22,4 @@ Closes #
 - [ ] Mypy static type checker passes cleanly (`python -m mypy src`).
 - [ ] Ruff linter and formatter pass cleanly (`python -m ruff check src`).
 - [ ] Documentation has been updated to reflect my changes where applicable.
+

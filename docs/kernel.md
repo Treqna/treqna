@@ -38,3 +38,4 @@ sequenceDiagram
 - `TransformationEngine`: Engine entry point managing configuration, discovery, and sessions.
 - `PipelineExecutor`: Runs sequence of 8 pipeline stages.
 - `LifecycleManager`: Tracks active sessions and memory cleanup.
+

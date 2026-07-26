@@ -35,3 +35,4 @@ Treqna is built around a decoupled, plugin-based architecture designed for unive
 |   UDMDocument / UDMTabular / UDMPrimitive / UDMCollection       |
 +-----------------------------------------------------------------+
 ```
+

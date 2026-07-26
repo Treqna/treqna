@@ -93,3 +93,4 @@ def test_plugin_not_found_raises() -> None:
 
     with pytest.raises(PluginNotFoundError):
         registry.get_writer("csv")
+

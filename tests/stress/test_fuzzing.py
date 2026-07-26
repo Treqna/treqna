@@ -35,3 +35,4 @@ def test_fuzzing_10000_inputs() -> None:
         target_fmt = formats[i % len(formats)]
         res = treqna.transform(payload).to(target_fmt).execute()
         assert isinstance(res.success, bool)
+
