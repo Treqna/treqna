@@ -1,0 +1,81 @@
+site_name: Treqna Documentation
+site_description: High-performance, modular Python library and CLI tool for universal data format transformation.
+site_url: https://treqna.github.io/treqna/
+
+repo_name: treqna/treqna
+repo_url: https://github.com/treqna/treqna
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.expand
+    - navigation.top
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - admonition
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction: getting-started.md
+      - Installation: installation.md
+      - Quick Start: quickstart.md
+  - Architecture & Design:
+      - System Architecture: architecture.md
+      - Kernel Engine: kernel.md
+      - Universal Data Model (UDM): utm.md
+      - Planning System: planner.md
+  - Core Systems & Plugins:
+      - Public Developer API: public-api.md
+      - Plugin System: plugin-system.md
+      - Driver SDK: driver-sdk.md
+      - Official CSV Adapter: csv-adapter.md
+      - Official JSON Adapter: json-adapter.md
+      - Official YAML Driver: yaml-driver.md
+      - Official XML Driver: xml-driver.md
+      - Official Excel Driver: excel-driver.md
+      - Command Line Interface (CLI): cli.md
+  - Guides & References:
+      - Practical Examples: examples.md
+      - Performance & Benchmarks: performance.md
+      - Developer Guide: developer_guide.md
+      - FAQ: faq.md
+      - Roadmap: roadmap.md
+      - Contributing: contributing.md
+      - Changelog: changelog.md

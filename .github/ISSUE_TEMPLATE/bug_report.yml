@@ -1,0 +1,47 @@
+name: Bug Report
+description: Create a report to help us improve Treqna
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue in Treqna! Please fill out the form below.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment Info
+      description: Operating System, Python version, Treqna version.
+      placeholder: e.g. Windows 11, Python 3.11.1, treqna 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproducible Example
+      description: Minimal Python code snippet or CLI command demonstrating the bug.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Stack Trace / Error Output
+      description: Paste any relevant error tracebacks or logs.
+      render: shell
+    validations:
+      required: false

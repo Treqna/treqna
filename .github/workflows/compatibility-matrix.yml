@@ -1,0 +1,42 @@
+name: Transformation Compatibility Matrix
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  compatibility-matrix:
+    name: Run Automated Compatibility Matrix
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: Run Compatibility Matrix Integration Tests
+        run: |
+          python -m pytest tests/integration/test_compatibility_matrix.py
+
+      - name: Generate Matrix Reports
+        run: |
+          python -c "from treqna.testing import CompatibilityMatrixRunner; r = CompatibilityMatrixRunner(); rep = r.run_matrix(); r.generate_json_report(rep, 'matrix_results.json'); r.generate_markdown_report(rep, 'matrix_report.md')"
+
+      - name: Upload Matrix Reports Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compatibility-matrix-reports
+          path: |
+            matrix_results.json
+            matrix_report.md

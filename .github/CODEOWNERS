@@ -1,0 +1,20 @@
+# Global Codeowners for Treqna Repository
+*                       @treqna/core-maintainers
+
+# Core Engine & Architecture
+/src/treqna/core/       @treqna/core-maintainers
+/src/treqna/planning/   @treqna/core-maintainers
+
+# Format System & Operations
+/src/treqna/formats/    @treqna/core-maintainers
+/src/treqna/operations/ @treqna/core-maintainers
+
+# Plugins
+/src/treqna/plugins/   @treqna/plugin-maintainers
+
+# Public API & CLI
+/src/treqna/api/       @treqna/core-maintainers
+/src/treqna/cli/       @treqna/core-maintainers
+
+# Workflows & Infrastructure
+/.github/               @treqna/devops-maintainers
