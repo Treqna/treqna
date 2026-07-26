@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
-    { name = "Treqna Maintainers", email = "maintainers@treqna.org" }
+    { name = "Treqna Maintainers", email = "maintainers@treqna.com" }
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
