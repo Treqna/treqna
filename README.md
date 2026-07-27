@@ -12,7 +12,7 @@ Transform structured data between **CSV**, **JSON**, **YAML**, **XML**, and **Ex
 
 Most data conversion libraries require writing converters for every pair of formats.
 
-Treqna uses a **Universal Data Model (UDM)** so every format only needs:
+[Treqna](https://treqna.com/) uses a **Universal Data Model (UDM)** so every format only needs:
 
 - Parser → Format → UDM
 - Writer → UDM → Format
