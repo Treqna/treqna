@@ -4,7 +4,6 @@
 
 [![Website](https://img.shields.io/badge/Website-treqna.com-1b17ff?style=flat&logo=googlechrome)](https://treqna.com)
 [![PyPI version](https://img.shields.io/pypi/v/treqna.svg?color=blue)](https://pypi.org/project/treqna/)
-[![CI Status](https://github.com/Treqna/treqna/actions/workflows/ci.yml/badge.svg)](https://github.com/Treqna/treqna/actions)
 [![Python Version](https://img.shields.io/pypi/pyversions/treqna.svg?color=blue)](https://pypi.org/project/treqna/)
 [![License](https://img.shields.io/github/license/Treqna/treqna.svg)](LICENSE)
 
