@@ -5,22 +5,50 @@ build-backend = "hatchling.build"
 [project]
 name = "treqna"
 version = "0.1.0"
-description = "Production-grade modular Python application framework."
+description = "Universal Data Transformation Engine for Python — CSV, JSON, YAML, XML with zero external dependencies and 100% loss-less accuracy."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [
     { name = "Treqna Maintainers", email = "maintainers@treqna.com" }
 ]
+keywords = [
+    "data-conversion",
+    "csv",
+    "json",
+    "yaml",
+    "xml",
+    "data-transformation",
+    "etl",
+    "parser",
+    "serializer",
+    "zero-dependency",
+    "treqna"
+]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Utilities",
     "Typing :: Typed",
 ]
 dependencies = []
+
+[project.urls]
+Homepage = "https://treqna.com"
+Documentation = "https://treqna.com"
+Repository = "https://github.com/Treqna/treqna"
+Issues = "https://github.com/Treqna/treqna/issues"
+Changelog = "https://github.com/Treqna/treqna/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = [
@@ -39,11 +67,11 @@ packages = ["src/treqna"]
 
 [tool.black]
 line-length = 88
-target-version = ["py313"]
+target-version = ["py38", "py39", "py310", "py311", "py312", "py313"]
 
 [tool.ruff]
 line-length = 88
-target-version = "py313"
+target-version = "py38"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "N", "UP", "B", "A", "C4", "SIM", "TCH"]
@@ -58,7 +86,7 @@ python_functions = ["test_*"]
 addopts = "-ra --strict-markers"
 
 [tool.mypy]
-python_version = "3.13"
+python_version = "3.11"
 strict = true
 warn_return_any = true
 warn_unused_configs = true
@@ -72,4 +100,3 @@ branch = true
 [tool.coverage.report]
 show_missing = true
 skip_covered = true
-
