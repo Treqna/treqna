@@ -56,3 +56,5 @@ venv.bak/
 # Documentation Site Build
 site/
 
+# Private Website Directory
+website/
