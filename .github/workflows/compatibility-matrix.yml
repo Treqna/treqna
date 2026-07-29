@@ -34,7 +34,7 @@ jobs:
           python -c "from treqna.testing import CompatibilityMatrixRunner; r = CompatibilityMatrixRunner(); rep = r.run_matrix(); r.generate_json_report(rep, 'matrix_results.json'); r.generate_markdown_report(rep, 'matrix_report.md')"
 
       - name: Upload Matrix Reports Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: compatibility-matrix-reports
           path: |
