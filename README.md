@@ -1,7 +1,8 @@
 # Treqna
 
-### One API. Every Format.
+### One API. Every Format. Universal Data Transformation Engine
 
+[![Website](https://img.shields.io/badge/Website-treqna.com-1b17ff?style=flat&logo=googlechrome)](https://treqna.com)
 [![PyPI version](https://img.shields.io/pypi/v/treqna.svg)](https://pypi.org/project/treqna/)
 [![Build Status](https://github.com/treqna/treqna/workflows/CI/badge.svg)](https://github.com/treqna/treqna/actions)
 [![Coverage Status](https://img.shields.io/codecov/c/github/treqna/treqna)](https://codecov.io/gh/treqna/treqna)
@@ -10,9 +11,19 @@
 
 ---
 
+## Overview & Live Web Playground
+
+Treqna is a modular Python library and CLI tool engineered for universal data format transformation across CSV, JSON, YAML, XML, and more.
+
+Try the interactive live web playground, documentation, and real-time converter at **[https://treqna.com](https://treqna.com)**.
+
+---
+
 ## Short Description
 
-Treqna is a modular Python library and CLI tool engineered for universal data format transformation. By decoupling input formats from target formats using an intermediate Universal Data Model (UDM), Treqna eliminates the $O(N^2)$ explosion of format-to-format converters, reducing system complexity to $O(N)$ modular parsers and writers.
+Treqna decouples input formats from target formats using an intermediate Universal Data Model (UDM), eliminating the $O(N^2)$ explosion of format-to-format converters and reducing system complexity to $O(N)$ modular parsers and writers.
+
+Explore interactive format conversion examples and full API reference on the official **[Treqna Website](https://treqna.com)**.
 
 ---
 
@@ -39,7 +50,7 @@ import treqna
 
 result = (
     treqna.transform("input.csv")
-    .to("csv")
+    .to("json")
     .validate()
     .optimize()
     .execute()
@@ -47,6 +58,8 @@ result = (
 
 print(result.output)
 ```
+
+Test live conversions directly in your browser without installing anything at **[treqna.com](https://treqna.com)**.
 
 ---
 
@@ -72,7 +85,7 @@ print(f"Valid Payload: {validation.is_valid}")
 
 result = (
     treqna.transform(payload)
-    .to("csv")
+    .to("json")
     .with_options({"delimiter": ","})
     .execute()
 )
@@ -100,7 +113,7 @@ if result.success:
 
 ```
 +------------------+
-|   Input Format   |  (CSV, TSV, etc.)
+|   Input Format   |  (CSV, JSON, YAML, XML)
 +--------+---------+
          |
          v
@@ -189,35 +202,11 @@ Treqna eliminates this complexity. By translating every format into a Universal 
 
 - **Sprint 0.1 - 0.8**: Core Engine, Format Descriptors, Operation DAG, Planning Engine, and Public API Architecture. (Completed)
 - **Sprint 0.9**: Official CSV Adapter Vertical Slice & CLI Integration. (Completed)
-- **Sprint 1.0**: JSON & JSON Lines (JSONL) Adapter plugins.
+- **Sprint 1.0**: JSON & JSON Lines (JSONL) Adapter plugins. (Completed)
 - **Sprint 1.1**: YAML & TOML Adapter plugins.
 - **Sprint 1.2**: XML & HTML Adapter plugins.
 - **Sprint 1.3**: Parquet & Arrow Tabular Adapter plugins.
 - **Sprint 2.0**: Distributed execution engine & WebAssembly target support.
-
----
-
-## Examples
-
-### Processing Custom Delimiters and Encodings
-
-```python
-import treqna
-
-result = (
-    treqna.transform("data.tsv")
-    .to("csv")
-    .with_options({
-        "delimiter": "\t",
-        "encoding": "utf-16",
-        "has_header": True,
-    })
-    .execute()
-)
-
-print(f"Success: {result.success}")
-print(f"Duration: {result.duration:.4f}s")
-```
 
 ---
 
@@ -236,7 +225,7 @@ treqna inspect data.csv
 treqna validate data.csv
 
 # Transform format
-treqna transform data.csv --to csv --out output.csv
+treqna transform data.csv --to json --out output.json
 
 # Display CLI version
 treqna --version
@@ -249,7 +238,7 @@ treqna --version
 Treqna is engineered for low latency and minimal memory overhead:
 
 - **Parsing Throughput**: 10,000 tabular rows parsed to UDM in under 0.15 seconds.
-- **Serialization Speed**: 10,000 UDM rows written to CSV in under 0.15 seconds.
+- **Serialization Speed**: 10,000 UDM rows written to JSON/CSV in under 0.15 seconds.
 - **Memory Footprint**: Streaming generator support guarantees $O(1)$ memory overhead for large file streams.
 
 ---
@@ -270,4 +259,3 @@ python -m pytest
 ## License
 
 Treqna is released under the MIT License. See [LICENSE](LICENSE) for full details.
-
