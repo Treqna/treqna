@@ -29,12 +29,10 @@ class PipelineStageError(TreqnaError):
 class PipelineStageInterface(ABC):
     @property
     @abstractmethod
-    def stage(self) -> PipelineStageEnum:
-        ...
+    def stage(self) -> PipelineStageEnum: ...
 
     @abstractmethod
-    def execute(self, context: PipelineContext, input_data: Any) -> StageResult:
-        ...
+    def execute(self, context: PipelineContext, input_data: Any) -> StageResult: ...
 
 
 class BasePipelineStage(PipelineStageInterface):
@@ -49,9 +47,7 @@ class BasePipelineStage(PipelineStageInterface):
         start_time = time.perf_counter()
         duration = time.perf_counter() - start_time
         out_data = (
-            input_data
-            if isinstance(input_data, (str, bytes, UDMDocument))
-            else None
+            input_data if isinstance(input_data, (str, bytes, UDMDocument)) else None
         )
         return StageResult(
             stage=self._stage_enum,
@@ -254,4 +250,3 @@ class PipelineExecutor:
             errors=tuple(errors_list),
             statistics=stats,
         )
-

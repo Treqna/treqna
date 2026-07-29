@@ -67,4 +67,3 @@ class JSONInspector(FormatInspectorInterface):
                 "keys": (),
                 "depth": 0,
             }
-

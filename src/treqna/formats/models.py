@@ -73,4 +73,3 @@ class FormatDescriptor:
     compression: CompressionEnum = CompressionEnum.NONE
     priority: PluginPriority = PluginPriority.NORMAL
     quality_metrics: QualityMetrics = field(default_factory=QualityMetrics)
-

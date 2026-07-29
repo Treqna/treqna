@@ -91,4 +91,3 @@ class Planner:
             candidate_plans=(plan,),
             duration_seconds=duration,
         )
-

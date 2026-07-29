@@ -41,9 +41,6 @@ class TransformationKnowledge:
 
 @dataclass(frozen=True, kw_only=True)
 class KnowledgeGraph:
-    knowledge: TransformationKnowledge = field(
-        default_factory=TransformationKnowledge
-    )
+    knowledge: TransformationKnowledge = field(default_factory=TransformationKnowledge)
     node_weights: Mapping[str, float] = field(default_factory=dict)
     edge_weights: Mapping[str, float] = field(default_factory=dict)
-

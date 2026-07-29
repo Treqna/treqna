@@ -13,4 +13,3 @@ class CSVOptions:
     quoting: int = csv.QUOTE_MINIMAL
     encoding: str = "utf-8"
     has_header: bool = True
-

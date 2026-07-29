@@ -8,8 +8,7 @@ from typing import Any
 class DataSource(ABC):
     @property
     @abstractmethod
-    def source_type(self) -> str:
-        ...
+    def source_type(self) -> str: ...
 
 
 @dataclass(frozen=True, kw_only=True)
@@ -75,9 +74,8 @@ def coerce_source(input_data: Any) -> DataSource:
                     if p.is_dir():
                         return FolderSource(folder_path=p)
                     return PathSource(path=p)
-                is_path_like = (
-                    len(input_data) < 260
-                    and ("/" in input_data or "\\" in input_data or "." in input_data)
+                is_path_like = len(input_data) < 260 and (
+                    "/" in input_data or "\\" in input_data or "." in input_data
                 )
                 if is_path_like:
                     return PathSource(path=p)
@@ -107,4 +105,3 @@ def extract_raw_payload(source: DataSource) -> str | bytes:
                 return val
         return str(source.stream)
     return str(source)
-

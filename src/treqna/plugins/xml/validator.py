@@ -25,4 +25,3 @@ class XMLValidator(FormatValidatorInterface):
         except (ET.ParseError, ValueError, Exception) as err:
             msg = f"XML syntax error: {err}"
             return False, (msg,)
-

@@ -14,14 +14,12 @@ from treqna.planning.strategy import PlanningPolicy
 
 class CostEstimator(ABC):
     @abstractmethod
-    def estimate_cost(self, plan: TransformationPlan) -> PlanCost:
-        ...
+    def estimate_cost(self, plan: TransformationPlan) -> PlanCost: ...
 
 
 class QualityEstimator(ABC):
     @abstractmethod
-    def estimate_quality(self, plan: TransformationPlan) -> PlanQuality:
-        ...
+    def estimate_quality(self, plan: TransformationPlan) -> PlanQuality: ...
 
 
 class PathEvaluator(ABC):
@@ -30,8 +28,7 @@ class PathEvaluator(ABC):
         self,
         nodes: Sequence[PlanNode],
         edges: Sequence[PlanEdge],
-    ) -> tuple[PlanCost, PlanQuality]:
-        ...
+    ) -> tuple[PlanCost, PlanQuality]: ...
 
 
 class PathScorer(ABC):
@@ -41,8 +38,7 @@ class PathScorer(ABC):
         cost: PlanCost,
         quality: PlanQuality,
         policy: PlanningPolicy,
-    ) -> float:
-        ...
+    ) -> float: ...
 
 
 class RouteSelector(ABC):
@@ -51,14 +47,12 @@ class RouteSelector(ABC):
         self,
         candidate_plans: Sequence[TransformationPlan],
         policy: PlanningPolicy,
-    ) -> TransformationPlan | None:
-        ...
+    ) -> TransformationPlan | None: ...
 
 
 class CapabilityMatcher(ABC):
     @abstractmethod
-    def matches_capabilities(self, source_format: str, target_format: str) -> bool:
-        ...
+    def matches_capabilities(self, source_format: str, target_format: str) -> bool: ...
 
 
 class ConstraintSolver(ABC):
@@ -67,6 +61,4 @@ class ConstraintSolver(ABC):
         self,
         plan: TransformationPlan,
         constraint: PlanConstraint,
-    ) -> bool:
-        ...
-
+    ) -> bool: ...

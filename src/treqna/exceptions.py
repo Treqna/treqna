@@ -41,4 +41,3 @@ class ExecutionError(TreqnaError):
 
 class ValidationError(TreqnaError):
     pass
-

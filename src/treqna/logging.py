@@ -37,4 +37,3 @@ def configure_logging(
 
     logger.addHandler(handler)
     return logger
-

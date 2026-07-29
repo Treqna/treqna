@@ -43,4 +43,3 @@ class PlanningResult:
     selected_plan: TransformationPlan | None = None
     candidate_plans: tuple[TransformationPlan, ...] = field(default_factory=tuple)
     duration_seconds: float = 0.0
-

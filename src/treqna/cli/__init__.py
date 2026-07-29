@@ -4,4 +4,3 @@ __all__ = [
     "create_parser",
     "main",
 ]
-

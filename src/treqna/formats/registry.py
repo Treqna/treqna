@@ -127,4 +127,3 @@ class FormatRegistry:
     def clear(self) -> None:
         self.descriptors.clear()
         self.capabilities.clear()
-

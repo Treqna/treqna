@@ -12,8 +12,7 @@ class UDMNode(ABC):
 
     @property
     @abstractmethod
-    def kind(self) -> UDMValueKindEnum:
-        ...
+    def kind(self) -> UDMValueKindEnum: ...
 
 
 @dataclass(frozen=True, kw_only=True)
@@ -92,4 +91,3 @@ class UDMDocument:
     root: UDMNode
     metadata: Mapping[str, Any] = field(default_factory=dict)
     schema_identifier: str | None = None
-

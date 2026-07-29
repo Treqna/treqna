@@ -11,4 +11,3 @@ class YAMLOptions:
     sort_keys: bool = False
     encoding: str = "utf-8"
     is_multi_document: bool = False
-

@@ -59,4 +59,3 @@ class OperationBuilder:
             graph=graph,
             operations=tuple(self._operations),
         )
-

@@ -3,11 +3,10 @@
 ### One API. Every Format. Universal Data Transformation Engine
 
 [![Website](https://img.shields.io/badge/Website-treqna.com-1b17ff?style=flat&logo=googlechrome)](https://treqna.com)
-[![PyPI version](https://img.shields.io/pypi/v/treqna.svg)](https://pypi.org/project/treqna/)
-[![Build Status](https://github.com/treqna/treqna/workflows/CI/badge.svg)](https://github.com/treqna/treqna/actions)
-[![Coverage Status](https://img.shields.io/codecov/c/github/treqna/treqna)](https://codecov.io/gh/treqna/treqna)
-[![Python Version](https://img.shields.io/pypi/pyversions/treqna.svg)](https://pypi.org/project/treqna/)
-[![License](https://img.shields.io/github/license/treqna/treqna.svg)](LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/treqna.svg?color=blue)](https://pypi.org/project/treqna/)
+[![CI Status](https://github.com/Treqna/treqna/actions/workflows/ci.yml/badge.svg)](https://github.com/Treqna/treqna/actions)
+[![Python Version](https://img.shields.io/pypi/pyversions/treqna.svg?color=blue)](https://pypi.org/project/treqna/)
+[![License](https://img.shields.io/github/license/Treqna/treqna.svg)](LICENSE)
 
 ---
 

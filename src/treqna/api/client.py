@@ -72,4 +72,3 @@ class TreqnaClient:
             self._plugin_registry.list_transformers()
         )
         return status
-

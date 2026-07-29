@@ -40,4 +40,3 @@ class OperationRegistry:
         self._descriptors_by_name.clear()
         for cat in self._descriptors_by_category:
             self._descriptors_by_category[cat].clear()
-

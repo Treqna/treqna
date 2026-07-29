@@ -21,4 +21,3 @@ __all__ = [
     "CSV_FORMAT_DESCRIPTOR",
     "register_csv_plugin",
 ]
-

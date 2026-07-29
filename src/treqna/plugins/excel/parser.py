@@ -132,7 +132,7 @@ def parse_worksheet_xml(
             str(v).strip() if v is not None else f"column_{i}"
             for i, v in enumerate(header_vals)
         )
-        data_rows = raw_tuples[options.header_row + 1:]
+        data_rows = raw_tuples[options.header_row + 1 :]
     else:
         columns = tuple(f"column_{i}" for i in range(total_cols))
         data_rows = raw_tuples
@@ -213,4 +213,3 @@ class ExcelParserPlugin(ParserPluginInterface):
         exec_ctx = ExecutionContext(current_format="excel", target_format="udm")
         ctx = PipelineContext(session_id="excel_stream", execution_context=exec_ctx)
         return self.parse_to_udm(text, ctx)
-

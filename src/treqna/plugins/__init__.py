@@ -24,4 +24,3 @@ __all__ = [
     "WriterPluginInterface",
     "discover_and_register_plugins",
 ]
-

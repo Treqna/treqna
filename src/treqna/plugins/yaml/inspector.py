@@ -65,4 +65,3 @@ class YAMLInspector(FormatInspectorInterface):
                 "depth": 0,
                 "is_multi_document": False,
             }
-

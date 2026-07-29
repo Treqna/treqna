@@ -23,8 +23,7 @@ def udm_node_to_json_obj(node: UDMNode) -> Any:
         result_list: list[dict[str, Any]] = []
         for row in node.rows:
             row_dict = {
-                cols[i]: row[i] if i < len(row) else None
-                for i in range(len(cols))
+                cols[i]: row[i] if i < len(row) else None for i in range(len(cols))
             }
             result_list.append(row_dict)
         return result_list
@@ -87,4 +86,3 @@ class JSONWriterPlugin(WriterPluginInterface):
             sort_keys=opts.sort_keys,
             allow_nan=opts.allow_nan,
         )
-

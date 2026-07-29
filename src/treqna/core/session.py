@@ -109,4 +109,3 @@ class LifecycleManager:
 
     def clear_all(self) -> None:
         self._active_sessions.clear()
-

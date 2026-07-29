@@ -18,4 +18,3 @@ def get_platform_info() -> dict[str, str]:
         "python_version": sys.version,
         "platform": sys.platform,
     }
-

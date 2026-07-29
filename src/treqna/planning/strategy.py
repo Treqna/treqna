@@ -8,12 +8,10 @@ from treqna.planning.models import TransformationPlan
 class PlanningRule(ABC):
     @property
     @abstractmethod
-    def rule_name(self) -> str:
-        ...
+    def rule_name(self) -> str: ...
 
     @abstractmethod
-    def evaluate(self, plan: TransformationPlan, context: PlannerContext) -> bool:
-        ...
+    def evaluate(self, plan: TransformationPlan, context: PlannerContext) -> bool: ...
 
 
 @dataclass(frozen=True, kw_only=True)
@@ -27,14 +25,11 @@ class PlanningPolicy:
 class PlanningStrategy(ABC):
     @property
     @abstractmethod
-    def name(self) -> str:
-        ...
+    def name(self) -> str: ...
 
     @abstractmethod
     def create_plan(
         self,
         request: PlanningRequest,
         context: PlannerContext,
-    ) -> PlanningResult:
-        ...
-
+    ) -> PlanningResult: ...

@@ -13,4 +13,3 @@ __all__ = [
     "JsonDict",
     "Versioned",
 ]
-

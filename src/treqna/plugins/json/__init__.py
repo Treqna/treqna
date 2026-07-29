@@ -21,4 +21,3 @@ __all__ = [
     "JSON_FORMAT_DESCRIPTOR",
     "register_json_plugin",
 ]
-

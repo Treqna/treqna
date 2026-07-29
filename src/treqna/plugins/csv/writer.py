@@ -67,4 +67,3 @@ class CSVWriterPlugin(WriterPluginInterface):
                 writer.writerow(list(tabular.columns))
             for row in tabular.rows:
                 writer.writerow(list(row))
-

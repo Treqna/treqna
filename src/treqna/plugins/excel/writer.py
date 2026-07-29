@@ -92,9 +92,7 @@ def build_xlsx_bytes(
     ct_sheet = (
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"
     )
-    ct_ws = (
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"
-    )
+    ct_ws = "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"
     ct_ss = (
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"
     )
@@ -107,7 +105,7 @@ def build_xlsx_bytes(
         f'  <Override PartName="/xl/workbook.xml" ContentType="{ct_sheet}"/>\n'
         f'  <Override PartName="/xl/worksheets/sheet1.xml" ContentType="{ct_ws}"/>\n'
         f'  <Override PartName="/xl/sharedStrings.xml" ContentType="{ct_ss}"/>\n'
-        '</Types>'
+        "</Types>"
     )
 
     rel_ns = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -116,7 +114,7 @@ def build_xlsx_bytes(
         '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
         '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">\n'
         f'  <Relationship Id="rId1" Type="{doc_rel}" Target="xl/workbook.xml"/>\n'
-        '</Relationships>'
+        "</Relationships>"
     )
 
     ws_rel = f"{rel_ns}/worksheet"
@@ -126,17 +124,17 @@ def build_xlsx_bytes(
         '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">\n'
         f'  <Relationship Id="rId1" Type="{ws_rel}" Target="worksheets/sheet1.xml"/>\n'
         f'  <Relationship Id="rId2" Type="{ss_rel}" Target="sharedStrings.xml"/>\n'
-        '</Relationships>'
+        "</Relationships>"
     )
 
     sheet_name = options.worksheet_name or "Sheet1"
     workbook_str = (
         '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
         f'<workbook xmlns="{NS_SPREADSHEET}" xmlns:r="{rel_ns}">\n'
-        '  <sheets>\n'
+        "  <sheets>\n"
         f'    <sheet name="{sheet_name}" sheetId="1" r:id="rId1"/>\n'
-        '  </sheets>\n'
-        '</workbook>'
+        "  </sheets>\n"
+        "</workbook>"
     )
 
     buf = io.BytesIO()
@@ -216,4 +214,3 @@ class ExcelWriterPlugin(WriterPluginInterface):
         ctx = PipelineContext(session_id="stream", execution_context=exec_ctx)
         xlsx_bytes = self.write_from_udm(document, ctx)
         target_stream.write(xlsx_bytes.decode("latin1"))
-

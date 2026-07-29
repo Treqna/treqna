@@ -11,6 +11,4 @@ class UDMTransformerPluginInterface(PluginInterface, ABC):
         self,
         document: UDMDocument,
         context: PipelineContext,
-    ) -> UDMDocument:
-        ...
-
+    ) -> UDMDocument: ...

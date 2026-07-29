@@ -215,4 +215,3 @@ class CompatibilityMatrixRunner:
 
         out_p = Path(output_path)
         out_p.write_text("\n".join(lines) + "\n", encoding="utf-8")
-

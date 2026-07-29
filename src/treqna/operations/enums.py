@@ -34,4 +34,3 @@ class OperationCapability(Enum):
     LOSSLESS = "lossless"
     BATCH_SUPPORT = "batch_support"
     ASYNC_SUPPORT = "async_support"
-

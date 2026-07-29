@@ -57,4 +57,3 @@ class XMLInspector(FormatInspectorInterface):
                 "has_doctype": False,
                 "depth": 0,
             }
-

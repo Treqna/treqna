@@ -79,9 +79,7 @@ class OperationDescriptor:
     category: OperationCategory = OperationCategory.TRANSFORM
     consumes: tuple[str, ...] = field(default_factory=tuple)
     produces: tuple[str, ...] = field(default_factory=tuple)
-    supported_format_families: tuple[FormatFamily, ...] = field(
-        default_factory=tuple
-    )
+    supported_format_families: tuple[FormatFamily, ...] = field(default_factory=tuple)
     priority: OperationPriority = OperationPriority.NORMAL
     estimated_cost: OperationCost = field(default_factory=OperationCost)
     streaming_support: bool = False
@@ -91,7 +89,4 @@ class OperationDescriptor:
     lossless: bool = True
     capabilities: tuple[OperationCapability, ...] = field(default_factory=tuple)
     constraints: OperationConstraint = field(default_factory=OperationConstraint)
-    requirements: OperationRequirement = field(
-        default_factory=OperationRequirement
-    )
-
+    requirements: OperationRequirement = field(default_factory=OperationRequirement)

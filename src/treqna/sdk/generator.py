@@ -90,12 +90,9 @@ class DriverGenerator:
 
         (bench_dir / "__init__.py").write_text("", encoding="utf-8")
         bench_code = render_benchmark_test(opts)
-        (bench_dir / f"test_{fn}_benchmark.py").write_text(
-            bench_code, encoding="utf-8"
-        )
+        (bench_dir / f"test_{fn}_benchmark.py").write_text(bench_code, encoding="utf-8")
 
         (docs_dir / "index.md").write_text(render_doc_index(opts), encoding="utf-8")
         (workflows_dir / "ci.yml").write_text(render_github_ci(), encoding="utf-8")
 
         return base_dir
-

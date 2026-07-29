@@ -21,4 +21,3 @@ class JSONDetector(FormatDetectorInterface):
         if self.can_detect(source_data):
             return "json"
         return "unknown"
-
